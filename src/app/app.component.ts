@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
-import { EnvService } from './services/env.service';
+
+import { EnvService } from './env.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  template: ` <h1>Deploy Mode: {{ deployMode }}</h1> `,
+  standalone: true,
+  imports: [CommonModule],
 })
 export class AppComponent {
   deployMode: string;
