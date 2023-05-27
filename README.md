@@ -11,7 +11,7 @@ Download git from (https://git-scm.com/). You shoud now be able to use the Git B
 ## ngEnvGen Build
 
 Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory.
-Thanks to the Bash script and some JavaScript files (EnvService, env folder, env.js and its import from the index.html and angular.json),
+Thanks to the `build.sh` Bash script and some JavaScript files (EnvService, env folder, env.js and its import from the index.html and angular.json),
 you could customly name the public folder to deploy to as well as the diferent environments. Feel free to add more environments in the env folder
 and type the EnvConfig objects as you please.
 When building the dist, we have 2 options: 
